@@ -1,0 +1,36 @@
+.marquee-wrapper {
+  background: linear-gradient(to right, #CFF0C4, #C7E0F2);
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.65);
+  padding: 0 8px;
+}
+
+.marquee-item.highlight {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.marquee-dot {
+  color: rgba(0,0,0,0.3);
+  font-size: 16px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

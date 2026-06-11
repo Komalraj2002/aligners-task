@@ -1,0 +1,239 @@
+.hero-wrapper {
+  background: var(--white);
+}
+
+.offer-banner {
+  background: var(--offer-bg);
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #166534;
+}
+
+.offer-banner s {
+  color: #9ca3af;
+  margin-right: 4px;
+}
+
+.offer-banner strong {
+  color: #15803d;
+}
+
+.hero-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 48px 45px 40px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  background: var(--lavender);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 28px;
+}
+
+.hero-worth {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.hero-form-box {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.form-question {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio-label input {
+  accent-color: var(--purple);
+  width: 16px;
+  height: 16px;
+}
+
+.hero-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  flex: 1;
+  min-width: 140px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: var(--font);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: var(--purple);
+}
+
+.btn-book-scan {
+  background: var(--purple-light);
+  color: var(--white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.btn-book-scan:hover {
+  background: var(--purple);
+}
+
+.form-consent {
+  font-size: 11px;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.hero-image {
+  flex-shrink: 0;
+  width: 380px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  height: 350px;
+}
+
+/* Clove Banner */
+.clove-banner {
+  max-width: 1200px;
+  margin: 0 auto 0;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin: 24px auto;
+  gap: 24px;
+}
+
+.clove-text p {
+  font-size: 15px;
+  color: var(--dark);
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.clove-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.clove-logo {
+  background: #7B4F28;
+  color: #E9811F;
+  padding: 5px 18px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.clove-logo span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 2px;
+  color: #FFEFE2;
+}
+
+.find-clinic {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--purple);
+}
+
+.find-clinic:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    gap: 28px;
+    padding: 32px 20px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: 280px;
+  }
+
+  .hero-form {
+    flex-direction: column;
+  }
+
+  .btn-book-scan {
+    width: 100%;
+  }
+
+  .clove-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+  }
+
+  .clove-right {
+    align-items: flex-start;
+  }
+}

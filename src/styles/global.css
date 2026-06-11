@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple: #7B5EA7;
+  --purple-light: #9B7EC8;
+  --purple-dark: #5a3f85;
+  --purple-bg: #f3f0f8;
+  --lavender: #EDE8F5;
+  --green: #22c55e;
+  --red: #ef4444;
+  --dark: #1a1a1a;
+  --gray: #6b7280;
+  --light-gray: #f9fafb;
+  --border: #e5e7eb;
+  --white: #ffffff;
+  --offer-bg: #d4f7d4;
+  --font: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

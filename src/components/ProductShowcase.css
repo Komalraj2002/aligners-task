@@ -1,0 +1,184 @@
+.showcase-section {
+  background: #f0f4ff;
+  padding: 60px 50px;
+}
+
+.showcase-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.showcase-left {
+  flex: 1;
+}
+
+.showcase-title {
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.showcase-desc {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.showcase-right {
+  flex-shrink: 0;
+  width: 320px;
+}
+
+/* Product Card */
+.product-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.product-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-old {
+  font-size: 13px;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.price-label {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.price-new {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--purple);
+}
+
+.price-note {
+  font-size: 11px;
+  color: var(--gray);
+}
+
+.product-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: var(--lavender);
+}
+
+.product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--dark);
+}
+
+.feature-check {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.learn-more {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s;
+}
+
+.learn-more:hover {
+  gap: 8px;
+  text-decoration: underline;
+}
+
+/* Skeleton */
+.skeleton {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton-title {
+  height: 22px;
+  width: 70%;
+  background: #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.skeleton-price {
+  height: 32px;
+  width: 50%;
+  background: #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.skeleton-line {
+  height: 14px;
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.error-msg {
+  font-size: 12px;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  .showcase-inner {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .showcase-right {
+    width: 100%;
+  }
+}
